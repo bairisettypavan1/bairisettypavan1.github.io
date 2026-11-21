@@ -8,7 +8,34 @@ document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     initRevealAnimations();
     initSmoothScroll();
+    initMobileMenu();
+
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
 });
+
+/* =====================================================
+   MOBILE MENU
+   ===================================================== */
+function initMobileMenu() {
+    const nav = document.getElementById('nav');
+    const toggle = document.getElementById('nav-toggle');
+    if (!nav || !toggle) return;
+
+    const setOpen = (open) => {
+        nav.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        document.body.style.overflow = open ? 'hidden' : '';
+    };
+
+    toggle.addEventListener('click', () => setOpen(!nav.classList.contains('open')));
+    nav.querySelectorAll('.nav-links a, .nav-logo').forEach(a =>
+        a.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') setOpen(false);
+    });
+}
 
 /* =====================================================
    CUSTOM CURSOR
@@ -54,7 +81,7 @@ function initCursor() {
     animateCursor();
 
     // Hover effects
-    const hoverTargets = document.querySelectorAll('a, button, .craft-card, .project-card, .fact');
+    const hoverTargets = document.querySelectorAll('a, button, .craft-card, .project-card, .fact, .info-card, .mini-project');
 
     hoverTargets.forEach(target => {
         target.addEventListener('mouseenter', () => {
@@ -115,6 +142,7 @@ function initRevealAnimations() {
     const revealElements = document.querySelectorAll(
         '.section-number, .section-title, .section-subtitle, ' +
         '.story-lead, .story-text p, .story-quote, .fact, ' +
+        '.exp-item, .info-card, .mini-project, ' +
         '.craft-card, .project-card, .connect-link, ' +
         '.connect-title, .connect-text'
     );
@@ -221,11 +249,7 @@ const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
-    if (currentScroll > 100) {
-        nav.style.padding = '20px 48px';
-    } else {
-        nav.style.padding = '32px 48px';
-    }
+    nav.classList.toggle('scrolled', currentScroll > 100);
 
     lastScroll = currentScroll;
 });

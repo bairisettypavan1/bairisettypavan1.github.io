@@ -4,8 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hi, I'm Pavan! A curious mind who loves building things with code and AI.">
-    <title>Pavan — Developer & Problem Solver</title>
+    <title>Pavan Bairisetty — Full Stack .NET & GenAI Developer</title>
+    <meta name="description"
+        content="Pavan Bairisetty — Full Stack .NET Developer at Capgemini building Generative AI applications with LLMs, RAG, AI agents, FastAPI and ASP.NET Core.">
+    <meta name="author" content="Pavan Bairisetty">
+    <link rel="canonical" href="https://bairisettypavan1.github.io/">
+
+    <!-- Link previews (LinkedIn, WhatsApp, Slack) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bairisettypavan1.github.io/">
+    <meta property="og:title" content="Pavan Bairisetty — Full Stack .NET & GenAI Developer">
+    <meta property="og:description"
+        content="Full Stack .NET Developer at Capgemini building GenAI apps: RAG chatbots, AI agents, FastAPI and ASP.NET Core.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Pavan Bairisetty — Full Stack .NET & GenAI Developer">
+    <meta name="twitter:description"
+        content="Full Stack .NET Developer at Capgemini building GenAI apps: RAG chatbots, AI agents, FastAPI and ASP.NET Core.">
+
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151515'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='40' fill='%23f09479'%3EP%3C/text%3E%3C/svg%3E">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,38 +48,48 @@
     </button>
 
     <!-- Navigation -->
-    <nav class="nav">
-        <a href="#home" class="nav-logo">P.</a>
-        <div class="nav-links">
-            <a href="#story">Story</a>
-            <a href="#craft">Craft</a>
-            <a href="#work">Work</a>
-            <a href="#connect">Say Hi</a>
+    <nav class="nav" id="nav">
+        <a href="#home" class="nav-logo" aria-label="Back to top">P.</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"
+            aria-controls="nav-links">
+            <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <p class="hero-wave">Hey there! 👋</p>
+            <p class="hero-wave">Hi, I'm</p>
             <h1 class="hero-title">
-                I'm <span class="name-highlight">Pavan</span>,<br>
-                <span class="title-small">a curious soul who turns</span><br>
-                <em class="title-accent">ideas into reality</em>
+                <span class="name-highlight">Pavan Bairisetty</span><br>
+                <span class="title-small">Full Stack .NET Developer at Capgemini</span>
+                <em class="title-accent">building with GenAI</em>
             </h1>
             <p class="hero-intro">
-                Recently graduated, currently exploring the beautiful intersection of
-                <strong>code</strong>, <strong>AI</strong>, and <strong>creativity</strong>.
-                I've solved 800+ coding puzzles (yes, I find that fun!) and I'm always
-                building something new.
+                I build <strong>LLM-powered applications</strong>, from <strong>RAG chatbots</strong> and
+                <strong>AI agents</strong> to the <strong>FastAPI</strong> and <strong>ASP.NET Core</strong>
+                backends that run them. B.Tech in AI &amp; Data Science, based in Navi Mumbai.
             </p>
-            <div class="hero-scroll">
-                <span>Scroll to explore</span>
-                <div class="scroll-line"></div>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View my work</a>
+                <a href="Bairisetty_Pavan_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
+                    Download resume
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" aria-hidden="true">
+                        <path d="M12 4v12M6 11l6 6 6-6M5 20h14" />
+                    </svg>
+                </a>
             </div>
         </div>
         <div class="hero-doodle">
-            <svg viewBox="0 0 200 200" class="blob">
+            <svg viewBox="0 0 200 200" class="blob" aria-hidden="true">
                 <path fill="currentColor"
                     d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.1C64.8,55,53.9,66.3,40.7,74.1C27.5,81.9,13.8,86.2,-1.1,87.9C-16,89.6,-32,88.7,-45.5,82.1C-59,75.5,-70,63.2,-77.2,49.1C-84.4,35,-87.8,19,-87.8,3C-87.8,-13,-84.4,-29,-76.6,-42.2C-68.8,-55.4,-56.6,-65.7,-43,-73.1C-29.4,-80.5,-14.7,-84.9,0.5,-85.7C15.7,-86.6,31.4,-83.8,44.7,-76.4Z"
                     transform="translate(100 100)" />
@@ -70,172 +97,212 @@
         </div>
     </section>
 
-    <!-- Story Section -->
-    <section class="story" id="story">
+    <!-- About Section -->
+    <section class="story" id="about">
         <div class="story-container">
             <div class="story-header">
                 <span class="section-number">01</span>
-                <h2 class="section-title">My Story</h2>
+                <h2 class="section-title">About</h2>
             </div>
 
             <div class="story-content">
                 <div class="story-text">
                     <p class="story-lead">
-                        It all started with a simple question: <em>"How does this work?"</em>
+                        I like taking an AI idea all the way to something people can actually use.
                     </p>
                     <p>
-                        That curiosity led me down the rabbit hole of computer science, where I discovered
-                        the joy of creating things from scratch. From writing my first "Hello World" to
-                        building AI systems that actually <em>think</em> — it's been quite a journey.
+                        I graduated in 2025 with a B.Tech in Artificial Intelligence &amp; Data Science from
+                        CMR Institute of Technology, Hyderabad, and joined <strong>Capgemini</strong> as a
+                        Full Stack .NET Developer in March 2026.
                     </p>
                     <p>
-                        I'm not just about writing code. I believe in building things that matter,
-                        solving problems that need solving, and always, <em>always</em> learning something new.
+                        My work sits where backend engineering meets Generative AI: LLMs, Retrieval-Augmented
+                        Generation, LangChain pipelines and agents with human-in-the-loop approval, built on
+                        solid fundamentals in OOP, data structures, REST APIs and SQL.
                     </p>
-                    <p class="story-quote">
-                        "The best way to predict the future is to create it."
-                        <span class="quote-author">— My daily reminder</span>
+                    <p>
+                        I'm looking for a role where I can apply AI/ML and automation in production engineering.
                     </p>
                 </div>
 
                 <div class="story-facts">
                     <div class="fact">
-                        <span class="fact-number">800+</span>
-                        <span class="fact-label">Problems solved<br><small>(and enjoyed every one)</small></span>
+                        <span class="fact-number">4</span>
+                        <span class="fact-label">End-to-end AI apps built<br><small>RAG, agents, ML</small></span>
                     </div>
                     <div class="fact">
-                        <span class="fact-number">∞</span>
-                        <span class="fact-label">Cups of chai<br><small>(the real fuel)</small></span>
+                        <span class="fact-number">1800+</span>
+                        <span class="fact-label">Job listings analysed per run<br><small>by my Job Search
+                                Agent</small></span>
                     </div>
                     <div class="fact">
-                        <span class="fact-number">24/7</span>
-                        <span class="fact-label">Curious mode<br><small>(always learning)</small></span>
+                        <span class="fact-number">L0–L3</span>
+                        <span class="fact-label">Capgemini AI Native track<br><small>through agentic AI
+                                systems</small></span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Craft Section (Skills) -->
-    <section class="craft" id="craft">
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="experience-container">
+            <div class="experience-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+
+            <article class="exp-item">
+                <div class="exp-meta">
+                    <span class="exp-date">Mar 2026 — Present</span>
+                    <span class="exp-place">Navi Mumbai, India</span>
+                </div>
+                <div class="exp-body">
+                    <h3 class="exp-role">Full Stack .NET Developer</h3>
+                    <p class="exp-company">Capgemini</p>
+                    <ul class="exp-points">
+                        <li>Designed and built a <strong>RAG chatbot for a banking use case</strong> with OpenAI
+                            embeddings, GPT-4o-mini, ChromaDB and LangChain, served by FastAPI with a Streamlit UI and
+                            LangSmith tracing.</li>
+                        <li>Built an <strong>Email Drafting &amp; Task Extraction Agent</strong> (FastAPI,
+                            SQLAlchemy, Pydantic v2) with a pipeline-status visualiser and a two-step human approval
+                            flow for AI-generated actions.</li>
+                        <li>Designed and documented <strong>CropDeal</strong>, a microservices application on ASP.NET
+                            Core 8, Ocelot API Gateway, JWT auth, SQL Server and Angular 17, including low-level design
+                            docs and ER diagrams.</li>
+                        <li>Full-stack .NET onboarding (C#, ASP.NET Core, EF Core, Angular) and Capgemini's AI Native
+                            certification track; cleared technical assessments in C#, OOP and NUnit testing.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <div class="exp-subgrid">
+                <div class="info-card">
+                    <span class="info-label">Education</span>
+                    <h3>B.Tech, Artificial Intelligence &amp; Data Science</h3>
+                    <p>CMR Institute of Technology, Hyderabad · 2025</p>
+                </div>
+                <div class="info-card">
+                    <span class="info-label">Certifications · in progress</span>
+                    <h3>GitHub Certified Agentic AI Developer (GH-600)</h3>
+                    <p>Capgemini AI Native Track L0–L3: AI foundations to agentic AI systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="craft" id="skills">
         <div class="craft-container">
             <div class="craft-header">
-                <span class="section-number">02</span>
-                <h2 class="section-title">My Craft</h2>
-                <p class="section-subtitle">Things I love working with</p>
+                <span class="section-number">03</span>
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">What I use day to day</p>
             </div>
 
             <div class="craft-grid">
-                <div class="craft-card" data-category="brain">
+                <div class="craft-card">
                     <div class="card-icon">🧠</div>
-                    <h3>AI & Machine Learning</h3>
-                    <p>Teaching machines to see, understand, and learn. It's like magic, but with math.</p>
+                    <h3>GenAI &amp; LLMs</h3>
+                    <p>RAG pipelines, AI agents and prompt engineering, with tracing so I can see why a model said what
+                        it said.</p>
                     <div class="card-tags">
-                        <span>Python</span>
-                        <span>TensorFlow</span>
-                        <span>Computer Vision</span>
+                        <span>LangChain</span>
+                        <span>LangSmith</span>
+                        <span>RAG</span>
+                        <span>ChromaDB</span>
+                        <span>OpenAI API</span>
+                        <span>Gemini API</span>
+                        <span>Scikit-learn</span>
                     </div>
                 </div>
 
-                <div class="craft-card" data-category="code">
-                    <div class="card-icon">💻</div>
-                    <h3>Full-Stack Development</h3>
-                    <p>From databases to beautiful interfaces — I enjoy building the whole thing.</p>
+                <div class="craft-card">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Backend &amp; APIs</h3>
+                    <p>REST APIs and microservices in Python and .NET, with auth, validation and clean data access.</p>
                     <div class="card-tags">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>SQL</span>
+                        <span>FastAPI</span>
+                        <span>ASP.NET Core</span>
+                        <span>EF Core</span>
+                        <span>SQLAlchemy</span>
+                        <span>Pydantic</span>
+                        <span>JWT</span>
+                        <span>Ocelot</span>
                     </div>
                 </div>
 
-                <div class="craft-card" data-category="puzzle">
-                    <div class="card-icon">🧩</div>
-                    <h3>Problem Solving</h3>
-                    <p>800+ problems solved across platforms. Puzzles are my happy place.</p>
+                <div class="craft-card">
+                    <div class="card-icon">🖥️</div>
+                    <h3>Frontend &amp; Data</h3>
+                    <p>Angular front ends and quick Streamlit UIs on top of well-designed SQL Server databases.</p>
                     <div class="card-tags">
-                        <span>DSA</span>
-                        <span>Algorithms</span>
-                        <span>Java</span>
+                        <span>Angular</span>
+                        <span>Streamlit</span>
+                        <span>HTML / CSS / JS</span>
+                        <span>SQL Server</span>
+                        <span>Database design</span>
                     </div>
                 </div>
 
-                <div class="craft-card" data-category="tools">
+                <div class="craft-card">
                     <div class="card-icon">🛠️</div>
-                    <h3>Tools & Automation</h3>
-                    <p>If it can be automated, I'm probably already building it.</p>
+                    <h3>Tools &amp; Practices</h3>
+                    <p>Version control, containers, API testing and the fundamentals that keep code maintainable.</p>
                     <div class="card-tags">
-                        <span>Git</span>
-                        <span>AWS</span>
-                        <span>Web Scraping</span>
+                        <span>Git / GitHub</span>
+                        <span>Docker</span>
+                        <span>Postman</span>
+                        <span>Swagger</span>
+                        <span>NUnit</span>
+                        <span>OOP &amp; DSA</span>
+                        <span>Agile</span>
                     </div>
                 </div>
             </div>
 
-            <div class="craft-marquee">
+            <div class="craft-marquee" aria-label="Languages: Python, C#, SQL, Java, JavaScript">
                 <div class="marquee-content">
-                    <span>Python</span>
-                    <span>•</span>
-                    <span>JavaScript</span>
-                    <span>•</span>
-                    <span>Java</span>
-                    <span>•</span>
-                    <span>C++</span>
-                    <span>•</span>
-                    <span>React</span>
-                    <span>•</span>
-                    <span>Machine Learning</span>
-                    <span>•</span>
-                    <span>Deep Learning</span>
-                    <span>•</span>
-                    <span>Computer Vision</span>
-                    <span>•</span>
-                    <span>SQL</span>
-                    <span>•</span>
-                    <span>Git</span>
-                    <span>•</span>
-                    <span>AWS</span>
-                    <span>•</span>
+                    <span>Python</span><span>•</span>
+                    <span>C#</span><span>•</span>
+                    <span>SQL</span><span>•</span>
+                    <span>Java</span><span>•</span>
+                    <span>JavaScript</span><span>•</span>
+                    <span>LangChain</span><span>•</span>
+                    <span>FastAPI</span><span>•</span>
+                    <span>ASP.NET Core</span><span>•</span>
+                    <span>Angular</span><span>•</span>
+                    <span>Docker</span><span>•</span>
                 </div>
                 <div class="marquee-content" aria-hidden="true">
-                    <span>Python</span>
-                    <span>•</span>
-                    <span>JavaScript</span>
-                    <span>•</span>
-                    <span>Java</span>
-                    <span>•</span>
-                    <span>C++</span>
-                    <span>•</span>
-                    <span>React</span>
-                    <span>•</span>
-                    <span>Machine Learning</span>
-                    <span>•</span>
-                    <span>Deep Learning</span>
-                    <span>•</span>
-                    <span>Computer Vision</span>
-                    <span>•</span>
-                    <span>SQL</span>
-                    <span>•</span>
-                    <span>Git</span>
-                    <span>•</span>
-                    <span>AWS</span>
-                    <span>•</span>
+                    <span>Python</span><span>•</span>
+                    <span>C#</span><span>•</span>
+                    <span>SQL</span><span>•</span>
+                    <span>Java</span><span>•</span>
+                    <span>JavaScript</span><span>•</span>
+                    <span>LangChain</span><span>•</span>
+                    <span>FastAPI</span><span>•</span>
+                    <span>ASP.NET Core</span><span>•</span>
+                    <span>Angular</span><span>•</span>
+                    <span>Docker</span><span>•</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Work Section (Projects) -->
-    <section class="work" id="work">
+    <!-- Projects Section -->
+    <section class="work" id="projects">
         <div class="work-container">
             <div class="work-header">
-                <span class="section-number">03</span>
-                <h2 class="section-title">Selected Work</h2>
-                <p class="section-subtitle">Projects I'm proud of</p>
+                <span class="section-number">04</span>
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Things I've designed and built end to end</p>
             </div>
 
             <div class="work-grid">
                 <!-- Project 1 -->
-                <article class="project-card" data-project="1">
+                <article class="project-card">
                     <div class="project-image">
                         <div class="project-visual job-agent">
                             <div class="visual-content">
@@ -249,64 +316,144 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">AI + Automation</span>
-                        <h3 class="project-title">Job Search Agent</h3>
+                        <span class="project-tag">AI Agent · Automation</span>
+                        <h3 class="project-title">AI-Powered Job Search Agent</h3>
                         <p class="project-desc">
-                            An AI-powered assistant that hunts for jobs while you sleep.
-                            Scrapes 1800+ listings, uses Gemini AI to match them to your skills,
-                            and sends you only the good ones. <em>Built out of necessity during
-                                my own job search!</em>
+                            Pulls 1,800+ listings per run from LinkedIn, Indeed and Naukri, scores each one against
+                            my profile with Gemini 1.5 Flash, and emails only the strong matches as a colour-coded
+                            report with direct apply links. Runs on a schedule and is configured through YAML.
                         </p>
                         <div class="project-tech">
                             <span>Python</span>
-                            <span>Gemini AI</span>
-                            <span>Web Scraping</span>
+                            <span>Gemini API</span>
+                            <span>JobSpy</span>
+                            <span>Pandas</span>
+                            <span>SMTP</span>
                         </div>
                         <a href="https://github.com/bairisettypavan1/job_search_agent" target="_blank" rel="noopener"
                             class="project-link">
-                            View Project →
+                            View code on GitHub →
                         </a>
                     </div>
                 </article>
 
                 <!-- Project 2 -->
-                <article class="project-card reverse" data-project="2">
+                <article class="project-card reverse">
                     <div class="project-image">
-                        <div class="project-visual object-detect">
+                        <div class="project-visual rag-bot">
                             <div class="visual-content">
-                                <span class="emoji">👁️</span>
-                                <div class="scan-line"></div>
-                                <div class="detection-box box-1"></div>
-                                <div class="detection-box box-2"></div>
+                                <span class="emoji">💬</span>
+                                <div class="pulse-rings">
+                                    <div class="ring"></div>
+                                    <div class="ring"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">Computer Vision</span>
-                        <h3 class="project-title">Object Detection System</h3>
+                        <span class="project-tag">RAG · LLM</span>
+                        <h3 class="project-title">Banking RAG Chatbot</h3>
                         <p class="project-desc">
-                            Teaching computers to see. Built using SSD300 and Inception V3
-                            architectures for real-time object detection. It's fascinating
-                            how a bunch of matrices can recognize a cat from a dog!
+                            A chatbot that answers banking questions from a document knowledge base instead of
+                            guessing. Documents are embedded with OpenAI into ChromaDB, retrieved through a LangChain
+                            pipeline and answered by GPT-4o-mini, with every step traced in LangSmith.
                         </p>
                         <div class="project-tech">
-                            <span>TensorFlow</span>
-                            <span>SSD300</span>
-                            <span>OpenCV</span>
+                            <span>LangChain</span>
+                            <span>OpenAI</span>
+                            <span>ChromaDB</span>
+                            <span>FastAPI</span>
+                            <span>Streamlit</span>
+                            <span>LangSmith</span>
                         </div>
-                        <a href="https://github.com/bairisettypavan1" target="_blank" rel="noopener"
-                            class="project-link">
-                            View Project →
-                        </a>
+                        <span class="project-note">Built at Capgemini · code not public</span>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-visual email-agent">
+                            <div class="visual-content">
+                                <span class="emoji">✉️</span>
+                                <div class="pulse-rings">
+                                    <div class="ring"></div>
+                                    <div class="ring"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">AI Agent · Human-in-the-loop</span>
+                        <h3 class="project-title">Email Drafting &amp; Task Extraction Agent</h3>
+                        <p class="project-desc">
+                            Reads incoming email, drafts replies and pulls out action items. Nothing is sent or saved
+                            until a person approves it in a two-step review, and a pipeline visualiser shows exactly
+                            where each email is.
+                        </p>
+                        <div class="project-tech">
+                            <span>FastAPI</span>
+                            <span>SQLAlchemy</span>
+                            <span>Pydantic v2</span>
+                            <span>LLM</span>
+                        </div>
+                        <span class="project-note">Built at Capgemini · code not public</span>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card reverse">
+                    <div class="project-image">
+                        <div class="project-visual cropdeal">
+                            <div class="visual-content">
+                                <span class="emoji">🌾</span>
+                                <div class="pulse-rings">
+                                    <div class="ring"></div>
+                                    <div class="ring"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Microservices · Full Stack</span>
+                        <h3 class="project-title">CropDeal</h3>
+                        <p class="project-desc">
+                            A marketplace connecting farmers and dealers, split into independent services behind an
+                            Ocelot API Gateway with JWT authentication. I produced the low-level design, ER diagrams
+                            and service-by-service architecture walkthroughs.
+                        </p>
+                        <div class="project-tech">
+                            <span>ASP.NET Core 8</span>
+                            <span>Ocelot</span>
+                            <span>JWT</span>
+                            <span>SQL Server</span>
+                            <span>Angular 17</span>
+                        </div>
+                        <span class="project-note">Built at Capgemini · code not public</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="mini-projects">
+                <article class="mini-project">
+                    <span class="project-tag">Machine Learning · NLP</span>
+                    <h3>SMS Spam Detection</h3>
+                    <p>A TF-IDF + Scikit-learn classifier that separates spam from real messages, tuned through text
+                        preprocessing and evaluated on accuracy and precision.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>NLP</span>
                     </div>
                 </article>
             </div>
 
             <div class="work-cta">
-                <p>Want to see more? Check out my</p>
+                <p>More of my code is on</p>
                 <a href="https://github.com/bairisettypavan1" target="_blank" rel="noopener" class="github-link">
-                    GitHub Profile
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    GitHub
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        aria-hidden="true">
                         <path d="M7 17L17 7M17 7H7M17 7V17" />
                     </svg>
                 </a>
@@ -314,46 +461,54 @@
         </div>
     </section>
 
-    <!-- Connect Section -->
-    <section class="connect" id="connect">
+    <!-- Contact Section -->
+    <section class="connect" id="contact">
         <div class="connect-container">
             <div class="connect-content">
-                <span class="section-number">04</span>
-                <h2 class="connect-title">Let's Create<br>Something Together</h2>
+                <span class="section-number">05</span>
+                <h2 class="connect-title">Let's work<br>together</h2>
                 <p class="connect-text">
-                    Whether you have a project idea, a job opportunity, or just want to
-                    chat about AI and code over chai — I'd love to hear from you!
+                    I'm open to roles in AI/ML engineering, GenAI and backend development.
+                    The fastest way to reach me is email.
                 </p>
 
                 <div class="connect-links">
-                    <a href="mailto:bairisettypavan@gmail.com" class="connect-link primary">
+                    <a href="mailto:bairisettypavan3575@gmail.com" class="connect-link primary">
                         <span class="link-icon">✉️</span>
                         <span class="link-text">
-                            <span class="link-label">Drop me an email</span>
-                            <span class="link-value">bairisettypavan@gmail.com</span>
+                            <span class="link-label">Email</span>
+                            <span class="link-value">bairisettypavan3575@gmail.com</span>
+                        </span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/bairisetty-pavan-927540211" target="_blank" rel="noopener"
+                        class="connect-link">
+                        <span class="link-icon">💼</span>
+                        <span class="link-text">
+                            <span class="link-label">LinkedIn</span>
+                            <span class="link-value">in/bairisetty-pavan-927540211</span>
                         </span>
                     </a>
 
                     <a href="https://github.com/bairisettypavan1" target="_blank" rel="noopener" class="connect-link">
                         <span class="link-icon">🐙</span>
                         <span class="link-text">
-                            <span class="link-label">See my code</span>
+                            <span class="link-label">GitHub</span>
                             <span class="link-value">github.com/bairisettypavan1</span>
                         </span>
                     </a>
 
-                    <a href="https://linkedin.com/in/bairisettypavan" target="_blank" rel="noopener"
-                        class="connect-link">
-                        <span class="link-icon">💼</span>
+                    <a href="Bairisetty_Pavan_Resume.pdf" target="_blank" rel="noopener" class="connect-link">
+                        <span class="link-icon">📄</span>
                         <span class="link-text">
-                            <span class="link-label">Connect professionally</span>
-                            <span class="link-value">LinkedIn</span>
+                            <span class="link-label">Resume</span>
+                            <span class="link-value">Download PDF</span>
                         </span>
                     </a>
                 </div>
             </div>
 
-            <div class="connect-visual">
+            <div class="connect-visual" aria-hidden="true">
                 <div class="handshake">🤝</div>
             </div>
         </div>
@@ -363,9 +518,9 @@
     <footer class="footer">
         <div class="footer-content">
             <p class="footer-text">
-                Designed & built with lots of ☕ by <strong>Pavan</strong>
+                Designed &amp; built by <strong>Pavan Bairisetty</strong>
             </p>
-            <p class="footer-year">© 2024</p>
+            <p class="footer-year">© <span id="year">2026</span></p>
         </div>
     </footer>
 
