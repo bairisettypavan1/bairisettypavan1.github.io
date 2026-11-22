@@ -1,514 +1,231 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pavan Bairisetty — Full Stack .NET & GenAI Developer</title>
+    <title>Pavan Bairisetty</title>
     <meta name="description"
-        content="Pavan Bairisetty — Full Stack .NET Developer at Capgemini building Generative AI applications with LLMs, RAG, AI agents, FastAPI and ASP.NET Core.">
+        content="Pavan Bairisetty, Full Stack .NET developer at Capgemini. I build LLM applications: RAG systems, AI agents and the Python and .NET backends behind them.">
     <meta name="author" content="Pavan Bairisetty">
     <link rel="canonical" href="https://bairisettypavan1.github.io/">
 
-    <!-- Link previews (LinkedIn, WhatsApp, Slack) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bairisettypavan1.github.io/">
-    <meta property="og:title" content="Pavan Bairisetty — Full Stack .NET & GenAI Developer">
+    <meta property="og:title" content="Pavan Bairisetty">
     <meta property="og:description"
-        content="Full Stack .NET Developer at Capgemini building GenAI apps: RAG chatbots, AI agents, FastAPI and ASP.NET Core.">
+        content="Full Stack .NET developer at Capgemini. I build LLM applications: RAG systems, AI agents and the backends behind them.">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Pavan Bairisetty — Full Stack .NET & GenAI Developer">
+    <meta name="twitter:title" content="Pavan Bairisetty">
     <meta name="twitter:description"
-        content="Full Stack .NET Developer at Capgemini building GenAI apps: RAG chatbots, AI agents, FastAPI and ASP.NET Core.">
+        content="Full Stack .NET developer at Capgemini. I build LLM applications: RAG systems, AI agents and the backends behind them.">
 
     <link rel="icon"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151515'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='40' fill='%23f09479'%3EP%3C/text%3E%3C/svg%3E">
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f3d36'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-weight='600' font-size='34' fill='%23f6f5f1'%3EPB%3C/text%3E%3C/svg%3E">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
 
+    <script>
+        try {
+            var t = localStorage.getItem('theme');
+            if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+        } catch (e) { }
+    </script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Noise Texture Overlay -->
-    <div class="noise"></div>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <!-- Cursor Follower -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-dot" id="cursor-dot"></div>
-
-    <!-- Theme Toggle (floating) -->
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-        <span class="toggle-icon">🌙</span>
-    </button>
-
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <a href="#home" class="nav-logo" aria-label="Back to top">P.</a>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"
-            aria-controls="nav-links">
-            <span></span><span></span>
-        </button>
-        <div class="nav-links" id="nav-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a href="#top" class="wordmark">Pavan Bairisetty</a>
+            <nav aria-label="Sections">
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch colour theme">Theme</button>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <p class="hero-wave">Hi, I'm</p>
-            <h1 class="hero-title">
-                <span class="name-highlight">Pavan Bairisetty</span><br>
-                <span class="title-small">Full Stack .NET Developer at Capgemini</span>
-                <em class="title-accent">building with GenAI</em>
-            </h1>
-            <p class="hero-intro">
-                I build <strong>LLM-powered applications</strong>, from <strong>RAG chatbots</strong> and
-                <strong>AI agents</strong> to the <strong>FastAPI</strong> and <strong>ASP.NET Core</strong>
-                backends that run them. B.Tech in AI &amp; Data Science, based in Navi Mumbai.
+    <main id="main">
+        <section class="intro wrap" id="top">
+            <p class="eyebrow">Full Stack .NET Developer · Capgemini · Navi Mumbai</p>
+            <h1>I build LLM applications and the backends that keep them honest.</h1>
+            <p class="lede">
+                I'm Pavan. Most of my work is retrieval-augmented chatbots and agents in Python, with FastAPI or
+                ASP.NET Core underneath. I care about the unglamorous parts: filtering before calling a model,
+                tracing every step, and keeping a person in the loop before anything gets sent.
             </p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary">View my work</a>
-                <a href="#contact" class="btn btn-ghost">Get in touch</a>
-            </div>
-        </div>
-        <div class="hero-doodle">
-            <svg viewBox="0 0 200 200" class="blob" aria-hidden="true">
-                <path fill="currentColor"
-                    d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.6,90,-16.3,88.5,-0.9C87,14.6,81.4,29.2,73.1,42.1C64.8,55,53.9,66.3,40.7,74.1C27.5,81.9,13.8,86.2,-1.1,87.9C-16,89.6,-32,88.7,-45.5,82.1C-59,75.5,-70,63.2,-77.2,49.1C-84.4,35,-87.8,19,-87.8,3C-87.8,-13,-84.4,-29,-76.6,-42.2C-68.8,-55.4,-56.6,-65.7,-43,-73.1C-29.4,-80.5,-14.7,-84.9,0.5,-85.7C15.7,-86.6,31.4,-83.8,44.7,-76.4Z"
-                    transform="translate(100 100)" />
-            </svg>
-        </div>
-    </section>
+            <p class="lede">
+                I graduated in 2025 with a B.Tech in AI &amp; Data Science and joined Capgemini in March 2026.
+                I'm looking for a role building AI features that run in production.
+            </p>
+            <ul class="intro-links">
+                <li><a href="mailto:bairisettypavan3575@gmail.com">bairisettypavan3575@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/bairisetty-pavan-927540211" target="_blank"
+                        rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/bairisettypavan1" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+        </section>
 
-    <!-- About Section -->
-    <section class="story" id="about">
-        <div class="story-container">
-            <div class="story-header">
-                <span class="section-number">01</span>
-                <h2 class="section-title">About</h2>
-            </div>
+        <section class="block wrap" id="experience" aria-labelledby="exp-h">
+            <h2 id="exp-h">Experience</h2>
 
-            <div class="story-content">
-                <div class="story-text">
-                    <p class="story-lead">
-                        I like taking an AI idea all the way to something people can actually use.
-                    </p>
-                    <p>
-                        I graduated in 2025 with a B.Tech in Artificial Intelligence &amp; Data Science from
-                        CMR Institute of Technology, Hyderabad, and joined <strong>Capgemini</strong> as a
-                        Full Stack .NET Developer in March 2026.
-                    </p>
-                    <p>
-                        My work sits where backend engineering meets Generative AI: LLMs, Retrieval-Augmented
-                        Generation, LangChain pipelines and agents with human-in-the-loop approval, built on
-                        solid fundamentals in OOP, data structures, REST APIs and SQL.
-                    </p>
-                    <p>
-                        I'm looking for a role where I can apply AI/ML and automation in production engineering.
-                    </p>
+            <article class="entry">
+                <div class="entry-head">
+                    <h3>Full Stack .NET Developer, <span class="org">Capgemini</span></h3>
+                    <span class="when">Mar 2026 – now</span>
                 </div>
+                <ul class="points">
+                    <li>
+                        <strong>Banking RAG chatbot.</strong> Answers customer questions from a document
+                        knowledge base: OpenAI embeddings in ChromaDB, retrieval through LangChain, answers from
+                        GPT-4o-mini, a FastAPI backend and a Streamlit front end. Every call is traced in LangSmith
+                        so wrong answers can be debugged instead of guessed at.
+                    </li>
+                    <li>
+                        <strong>Email drafting and task extraction agent.</strong> Drafts replies and pulls action
+                        items out of incoming mail. Nothing is sent or saved until a person approves it in a
+                        two-step review. Built with FastAPI, SQLAlchemy and Pydantic v2, with a view that shows
+                        where each email is in the pipeline.
+                    </li>
+                    <li>
+                        <strong>CropDeal.</strong> Designed and documented a farmer-to-dealer marketplace split into
+                        ASP.NET Core 8 services behind an Ocelot gateway, with JWT auth, SQL Server and an Angular 17
+                        client. I wrote the low-level design, ER diagrams and per-service walkthroughs.
+                    </li>
+                    <li>
+                        Completed the full-stack .NET onboarding (C#, EF Core, Angular, NUnit) and I'm working
+                        through Capgemini's AI Native certification track, levels L0 to L3.
+                    </li>
+                </ul>
+                <p class="note">Work projects, so the code isn't public.</p>
+            </article>
+        </section>
 
-                <div class="story-facts">
-                    <div class="fact">
-                        <span class="fact-number">4</span>
-                        <span class="fact-label">End-to-end AI apps built<br><small>RAG, agents, ML</small></span>
-                    </div>
-                    <div class="fact">
-                        <span class="fact-number">1800+</span>
-                        <span class="fact-label">Job listings analysed per run<br><small>by my Job Search
-                                Agent</small></span>
-                    </div>
-                    <div class="fact">
-                        <span class="fact-number">L0–L3</span>
-                        <span class="fact-label">Capgemini AI Native track<br><small>through agentic AI
-                                systems</small></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="block wrap" id="projects" aria-labelledby="proj-h">
+            <h2 id="proj-h">Projects</h2>
 
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <div class="experience-container">
-            <div class="experience-header">
-                <span class="section-number">02</span>
-                <h2 class="section-title">Experience</h2>
-            </div>
-
-            <article class="exp-item">
-                <div class="exp-meta">
-                    <span class="exp-date">Mar 2026 — Present</span>
-                    <span class="exp-place">Navi Mumbai, India</span>
+            <article class="entry project">
+                <div class="entry-head">
+                    <h3>AI job search agent</h3>
+                    <a class="repo" href="https://github.com/bairisettypavan1/job_search_agent" target="_blank"
+                        rel="noopener">Source on GitHub ↗</a>
                 </div>
-                <div class="exp-body">
-                    <h3 class="exp-role">Full Stack .NET Developer</h3>
-                    <p class="exp-company">Capgemini</p>
-                    <ul class="exp-points">
-                        <li>Designed and built a <strong>RAG chatbot for a banking use case</strong> with OpenAI
-                            embeddings, GPT-4o-mini, ChromaDB and LangChain, served by FastAPI with a Streamlit UI and
-                            LangSmith tracing.</li>
-                        <li>Built an <strong>Email Drafting &amp; Task Extraction Agent</strong> (FastAPI,
-                            SQLAlchemy, Pydantic v2) with a pipeline-status visualiser and a two-step human approval
-                            flow for AI-generated actions.</li>
-                        <li>Designed and documented <strong>CropDeal</strong>, a microservices application on ASP.NET
-                            Core 8, Ocelot API Gateway, JWT auth, SQL Server and Angular 17, including low-level design
-                            docs and ER diagrams.</li>
-                        <li>Full-stack .NET onboarding (C#, ASP.NET Core, EF Core, Angular) and Capgemini's AI Native
-                            certification track; cleared technical assessments in C#, OOP and NUnit testing.</li>
-                    </ul>
-                </div>
+                <p>
+                    I got tired of scrolling job boards, so I wrote an agent that does it for me. Every morning
+                    a GitHub Actions job scrapes new LinkedIn and Indeed postings, throws out anything senior,
+                    out of area or already seen, and sends only the top 30 to Gemini for a structured assessment.
+                    I get an email by 9 AM with a fit score, the skills I'm missing and a tailored pitch for each job.
+                </p>
+                <figure class="pipeline" aria-label="How the job search agent works">
+                    <pre><code><span class="c"># runs daily at 08:45 IST on GitHub Actions</span>
+scrape    LinkedIn + Indeed via JobSpy, last 36 hours
+filter    dedupe, drop senior titles, wrong city, &gt;2 yrs required
+memory    skip jobs already emailed on earlier days
+score     weighted keyword match from profile.yaml
+  └─ top 30 → Gemini  <span class="c">structured JSON: fit, gaps, pitch</span>
+rank      0.7 × AI + 0.3 × keywords + location bonus
+email     HTML digest (top 20) + CSV via Gmail SMTP</code></pre>
+                </figure>
+                <p class="decisions-title">Choices I'd defend in an interview</p>
+                <ul class="points">
+                    <li>The cheap, deterministic filters run before the model, so the run stays inside Gemini's
+                        free tier and still works, ranked by keywords alone, if the API is down.</li>
+                    <li>It doesn't apply automatically. Bot-submitting breaks the job sites' terms, so the agent
+                        does the searching and writing and I click Apply.</li>
+                </ul>
+                <p class="stack">Python · Gemini API · Pydantic · JobSpy · Pandas · GitHub Actions · pytest</p>
             </article>
 
-            <div class="exp-subgrid">
-                <div class="info-card">
-                    <span class="info-label">Education</span>
-                    <h3>B.Tech, Artificial Intelligence &amp; Data Science</h3>
-                    <p>CMR Institute of Technology, Hyderabad · 2025</p>
+            <article class="entry project">
+                <div class="entry-head">
+                    <h3>SMS spam classifier</h3>
                 </div>
-                <div class="info-card">
-                    <span class="info-label">Certifications · in progress</span>
-                    <h3>GitHub Certified Agentic AI Developer (GH-600)</h3>
-                    <p>Capgemini AI Native Track L0–L3: AI foundations to agentic AI systems</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="craft" id="skills">
-        <div class="craft-container">
-            <div class="craft-header">
-                <span class="section-number">03</span>
-                <h2 class="section-title">Skills</h2>
-                <p class="section-subtitle">What I use day to day</p>
-            </div>
-
-            <div class="craft-grid">
-                <div class="craft-card">
-                    <div class="card-icon">🧠</div>
-                    <h3>GenAI &amp; LLMs</h3>
-                    <p>RAG pipelines, AI agents and prompt engineering, with tracing so I can see why a model said what
-                        it said.</p>
-                    <div class="card-tags">
-                        <span>LangChain</span>
-                        <span>LangSmith</span>
-                        <span>RAG</span>
-                        <span>ChromaDB</span>
-                        <span>OpenAI API</span>
-                        <span>Gemini API</span>
-                        <span>Scikit-learn</span>
-                    </div>
-                </div>
-
-                <div class="craft-card">
-                    <div class="card-icon">⚙️</div>
-                    <h3>Backend &amp; APIs</h3>
-                    <p>REST APIs and microservices in Python and .NET, with auth, validation and clean data access.</p>
-                    <div class="card-tags">
-                        <span>FastAPI</span>
-                        <span>ASP.NET Core</span>
-                        <span>EF Core</span>
-                        <span>SQLAlchemy</span>
-                        <span>Pydantic</span>
-                        <span>JWT</span>
-                        <span>Ocelot</span>
-                    </div>
-                </div>
-
-                <div class="craft-card">
-                    <div class="card-icon">🖥️</div>
-                    <h3>Frontend &amp; Data</h3>
-                    <p>Angular front ends and quick Streamlit UIs on top of well-designed SQL Server databases.</p>
-                    <div class="card-tags">
-                        <span>Angular</span>
-                        <span>Streamlit</span>
-                        <span>HTML / CSS / JS</span>
-                        <span>SQL Server</span>
-                        <span>Database design</span>
-                    </div>
-                </div>
-
-                <div class="craft-card">
-                    <div class="card-icon">🛠️</div>
-                    <h3>Tools &amp; Practices</h3>
-                    <p>Version control, containers, API testing and the fundamentals that keep code maintainable.</p>
-                    <div class="card-tags">
-                        <span>Git / GitHub</span>
-                        <span>Docker</span>
-                        <span>Postman</span>
-                        <span>Swagger</span>
-                        <span>NUnit</span>
-                        <span>OOP &amp; DSA</span>
-                        <span>Agile</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="craft-marquee" aria-label="Languages: Python, C#, SQL, Java, JavaScript">
-                <div class="marquee-content">
-                    <span>Python</span><span>•</span>
-                    <span>C#</span><span>•</span>
-                    <span>SQL</span><span>•</span>
-                    <span>Java</span><span>•</span>
-                    <span>JavaScript</span><span>•</span>
-                    <span>LangChain</span><span>•</span>
-                    <span>FastAPI</span><span>•</span>
-                    <span>ASP.NET Core</span><span>•</span>
-                    <span>Angular</span><span>•</span>
-                    <span>Docker</span><span>•</span>
-                </div>
-                <div class="marquee-content" aria-hidden="true">
-                    <span>Python</span><span>•</span>
-                    <span>C#</span><span>•</span>
-                    <span>SQL</span><span>•</span>
-                    <span>Java</span><span>•</span>
-                    <span>JavaScript</span><span>•</span>
-                    <span>LangChain</span><span>•</span>
-                    <span>FastAPI</span><span>•</span>
-                    <span>ASP.NET Core</span><span>•</span>
-                    <span>Angular</span><span>•</span>
-                    <span>Docker</span><span>•</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="work" id="projects">
-        <div class="work-container">
-            <div class="work-header">
-                <span class="section-number">04</span>
-                <h2 class="section-title">Projects</h2>
-                <p class="section-subtitle">Things I've designed and built end to end</p>
-            </div>
-
-            <div class="work-grid">
-                <!-- Project 1 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-visual job-agent">
-                            <div class="visual-content">
-                                <span class="emoji">🔍</span>
-                                <div class="pulse-rings">
-                                    <div class="ring"></div>
-                                    <div class="ring"></div>
-                                    <div class="ring"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-tag">AI Agent · Automation</span>
-                        <h3 class="project-title">AI-Powered Job Search Agent</h3>
-                        <p class="project-desc">
-                            Pulls 1,800+ listings per run from LinkedIn, Indeed and Naukri, scores each one against
-                            my profile with Gemini 1.5 Flash, and emails only the strong matches as a colour-coded
-                            report with direct apply links. Runs on a schedule and is configured through YAML.
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Gemini API</span>
-                            <span>JobSpy</span>
-                            <span>Pandas</span>
-                            <span>SMTP</span>
-                        </div>
-                        <a href="https://github.com/bairisettypavan1/job_search_agent" target="_blank" rel="noopener"
-                            class="project-link">
-                            View code on GitHub →
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Project 2 -->
-                <article class="project-card reverse">
-                    <div class="project-image">
-                        <div class="project-visual rag-bot">
-                            <div class="visual-content">
-                                <span class="emoji">💬</span>
-                                <div class="pulse-rings">
-                                    <div class="ring"></div>
-                                    <div class="ring"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-tag">RAG · LLM</span>
-                        <h3 class="project-title">Banking RAG Chatbot</h3>
-                        <p class="project-desc">
-                            A chatbot that answers banking questions from a document knowledge base instead of
-                            guessing. Documents are embedded with OpenAI into ChromaDB, retrieved through a LangChain
-                            pipeline and answered by GPT-4o-mini, with every step traced in LangSmith.
-                        </p>
-                        <div class="project-tech">
-                            <span>LangChain</span>
-                            <span>OpenAI</span>
-                            <span>ChromaDB</span>
-                            <span>FastAPI</span>
-                            <span>Streamlit</span>
-                            <span>LangSmith</span>
-                        </div>
-                        <span class="project-note">Built at Capgemini · code not public</span>
-                    </div>
-                </article>
-
-                <!-- Project 3 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <div class="project-visual email-agent">
-                            <div class="visual-content">
-                                <span class="emoji">✉️</span>
-                                <div class="pulse-rings">
-                                    <div class="ring"></div>
-                                    <div class="ring"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-tag">AI Agent · Human-in-the-loop</span>
-                        <h3 class="project-title">Email Drafting &amp; Task Extraction Agent</h3>
-                        <p class="project-desc">
-                            Reads incoming email, drafts replies and pulls out action items. Nothing is sent or saved
-                            until a person approves it in a two-step review, and a pipeline visualiser shows exactly
-                            where each email is.
-                        </p>
-                        <div class="project-tech">
-                            <span>FastAPI</span>
-                            <span>SQLAlchemy</span>
-                            <span>Pydantic v2</span>
-                            <span>LLM</span>
-                        </div>
-                        <span class="project-note">Built at Capgemini · code not public</span>
-                    </div>
-                </article>
-
-                <!-- Project 4 -->
-                <article class="project-card reverse">
-                    <div class="project-image">
-                        <div class="project-visual cropdeal">
-                            <div class="visual-content">
-                                <span class="emoji">🌾</span>
-                                <div class="pulse-rings">
-                                    <div class="ring"></div>
-                                    <div class="ring"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-tag">Microservices · Full Stack</span>
-                        <h3 class="project-title">CropDeal</h3>
-                        <p class="project-desc">
-                            A marketplace connecting farmers and dealers, split into independent services behind an
-                            Ocelot API Gateway with JWT authentication. I produced the low-level design, ER diagrams
-                            and service-by-service architecture walkthroughs.
-                        </p>
-                        <div class="project-tech">
-                            <span>ASP.NET Core 8</span>
-                            <span>Ocelot</span>
-                            <span>JWT</span>
-                            <span>SQL Server</span>
-                            <span>Angular 17</span>
-                        </div>
-                        <span class="project-note">Built at Capgemini · code not public</span>
-                    </div>
-                </article>
-            </div>
-
-            <div class="mini-projects">
-                <article class="mini-project">
-                    <span class="project-tag">Machine Learning · NLP</span>
-                    <h3>SMS Spam Detection</h3>
-                    <p>A TF-IDF + Scikit-learn classifier that separates spam from real messages, tuned through text
-                        preprocessing and evaluated on accuracy and precision.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Scikit-learn</span>
-                        <span>NLP</span>
-                    </div>
-                </article>
-            </div>
-
-            <div class="work-cta">
-                <p>More of my code is on</p>
-                <a href="https://github.com/bairisettypavan1" target="_blank" rel="noopener" class="github-link">
-                    GitHub
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        aria-hidden="true">
-                        <path d="M7 17L17 7M17 7H7M17 7V17" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="connect" id="contact">
-        <div class="connect-container">
-            <div class="connect-content">
-                <span class="section-number">05</span>
-                <h2 class="connect-title">Let's work<br>together</h2>
-                <p class="connect-text">
-                    I'm open to roles in AI/ML engineering, GenAI and backend development.
-                    The fastest way to reach me is email.
+                <p>
+                    A first NLP project: TF-IDF features and a Scikit-learn classifier that separates spam from
+                    real messages, improved through text preprocessing and judged on precision as well as
+                    accuracy, since flagging a real message as spam costs more than missing one.
                 </p>
+                <p class="stack">Python · Scikit-learn · TF-IDF</p>
+            </article>
+        </section>
 
-                <div class="connect-links">
-                    <a href="mailto:bairisettypavan3575@gmail.com" class="connect-link primary">
-                        <span class="link-icon">✉️</span>
-                        <span class="link-text">
-                            <span class="link-label">Email</span>
-                            <span class="link-value">bairisettypavan3575@gmail.com</span>
-                        </span>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/bairisetty-pavan-927540211" target="_blank" rel="noopener"
-                        class="connect-link">
-                        <span class="link-icon">💼</span>
-                        <span class="link-text">
-                            <span class="link-label">LinkedIn</span>
-                            <span class="link-value">in/bairisetty-pavan-927540211</span>
-                        </span>
-                    </a>
-
-                    <a href="https://github.com/bairisettypavan1" target="_blank" rel="noopener" class="connect-link">
-                        <span class="link-icon">🐙</span>
-                        <span class="link-text">
-                            <span class="link-label">GitHub</span>
-                            <span class="link-value">github.com/bairisettypavan1</span>
-                        </span>
-                    </a>
-
+        <section class="block wrap" id="skills" aria-labelledby="skills-h">
+            <h2 id="skills-h">Skills</h2>
+            <dl class="skills">
+                <div>
+                    <dt>Languages</dt>
+                    <dd>Python, C#, SQL, Java, JavaScript</dd>
                 </div>
-            </div>
+                <div>
+                    <dt>LLMs and ML</dt>
+                    <dd>LangChain, LangSmith, RAG, ChromaDB, OpenAI and Gemini APIs, prompt design, agents,
+                        Scikit-learn</dd>
+                </div>
+                <div>
+                    <dt>Backend</dt>
+                    <dd>FastAPI, ASP.NET Core, Entity Framework Core, SQLAlchemy, Pydantic, REST, JWT,
+                        microservices, Ocelot</dd>
+                </div>
+                <div>
+                    <dt>Frontend</dt>
+                    <dd>Angular, Streamlit, HTML, CSS</dd>
+                </div>
+                <div>
+                    <dt>Data</dt>
+                    <dd>SQL Server, schema design</dd>
+                </div>
+                <div>
+                    <dt>Tools</dt>
+                    <dd>Git, GitHub Actions, Docker, Postman, Swagger, NUnit, pytest</dd>
+                </div>
+            </dl>
+        </section>
 
-            <div class="connect-visual" aria-hidden="true">
-                <div class="handshake">🤝</div>
-            </div>
-        </div>
-    </section>
+        <section class="block wrap" id="education" aria-labelledby="edu-h">
+            <h2 id="edu-h">Education and certifications</h2>
+            <article class="entry">
+                <div class="entry-head">
+                    <h3>B.Tech, Artificial Intelligence and Data Science</h3>
+                    <span class="when">2025</span>
+                </div>
+                <p>CMR Institute of Technology, Hyderabad</p>
+            </article>
+            <article class="entry">
+                <div class="entry-head">
+                    <h3>In progress</h3>
+                </div>
+                <ul class="points">
+                    <li>GitHub Certified Agentic AI Developer (GH-600)</li>
+                    <li>Capgemini AI Native track, L0 to L3: AI foundations through agentic systems</li>
+                </ul>
+            </article>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p class="footer-text">
-                Designed &amp; built by <strong>Pavan Bairisetty</strong>
+        <section class="block wrap contact" id="contact" aria-labelledby="contact-h">
+            <h2 id="contact-h">Contact</h2>
+            <p>
+                If you're hiring for GenAI, AI/ML or backend work, email is the quickest way to reach me.
             </p>
-            <p class="footer-year">© <span id="year">2026</span></p>
-        </div>
+            <p><a class="email" href="mailto:bairisettypavan3575@gmail.com">bairisettypavan3575@gmail.com</a></p>
+            <p class="muted">
+                Also on <a href="https://www.linkedin.com/in/bairisetty-pavan-927540211" target="_blank"
+                    rel="noopener">LinkedIn</a> and <a href="https://github.com/bairisettypavan1" target="_blank"
+                    rel="noopener">GitHub</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer wrap">
+        <p>© <span id="year">2026</span> Pavan Bairisetty</p>
     </footer>
 
     <script src="script.js"></script>
